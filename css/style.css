@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root {
+    --font-padrao:'Inter', sans-serif;
+    --cor-1: #8E2424;
+    --cor-2: #667085;
+    --cor-3: #101828;
+    --cor-4: #3A404E;
+    --cor-5: #EAECF0;
+    --cor-6:#D0D5DD;
+    --cor-branco:WHITE;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+    line-height: 24px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding:0px 112px;
+    width: 100%;
+    height: 100vh;
+}
+
+/* barra de navegacao */
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 32px;
+}
+
+.barra__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.barra__logo-texto {
+    color: var(--cor-4);
+    justify-content: center;
+    flex-direction:column;
+    font-family: var(--font-padrao);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+}
+
+
+.barra__navegação {
+    display: flex;
+    width: 730px;
+    align-items: center;
+    gap: 32px;
+    padding: 0px 32px;
+}
+
+.barra__navegação__link {
+    font-family: var(--font-padrao);
+    text-decoration: none;
+    color: var(--cor-2);
+    font-size: 18px;
+}
+
+button {
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    background: none;
+    color: var(--cor-2);
+    font-size: 14px;
+}
+
+.barra__login__entrar {
+    font-family: var(--font-padrao);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.barra__login__cadastrar {
+    background: var(--cor-1);
+    color: var(--cor-branco);
+    font-family: var(--font-padrao);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+   line-height: 24px;
+}
+
+header {
+    display: flex;
+    width: auto;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 32px;
+}
+
+
+
+/* cabecalho */
+.titulo {
+    font-family: var(--font-padrao);
+    flex-direction: column;
+    padding: 96px 0px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    color: var(--cor-1);
+    line-height: 24px;
+    font-weight: 600;
+
+}
+
+.subtitulo {
+   font-family: var(--font-padrao);
+   padding-bottom: 24px;
+   font-size: 48px;
+   color: var(--cor-3);
+   font-style: normal;
+   font-weight: 600;
+   line-height: 60px;
+   letter-spacing: -0.96px;
+}
+
+.texto {
+    font-family: var(--font-padrao);
+    line-height: 30px;
+    color: var(--cor-2);
+    font-size: 20px;
+    max-width: 800px;
+}
+
+.header {
+    display: flex;
+    height: 407px;
+    padding: 96px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+
+/* metricas */
+.metricas {
+    display: flex;
+    justify-content: center;
+    padding: 180px 0px;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.metricas__container {
+    max-width: 280px;
+}
+
+.metricas__container__nuremo {
+   color: var(--cor-1);
+   font-family: var(--font-padrao);
+   font-size: 60px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   padding-bottom: 24px;
+   letter-spacing: -1.2px;
+}
+
+.metricas__container__titulo {
+    color: var(--cor-3);
+    font-family: var(--font-padrao);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500; 
+    line-height: 28px;
+    padding-bottom: 8px;
+}
+
+.metricas__container__texto {
+    color: var(--cor-2);
+    font-family: var(--font-padrao);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px
+}
+
+.header {
+    display: flex;
+   padding-bottom: 0px;
+   flex-direction: column;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+}
+
+/* talentos */
+.talentos {
+   display: flex;
+   padding-top: 0px;
+   flex-direction: column;
+   align-items: center;
+   gap: 28px;
+   align-self: stretch;
+}
+
+.talentos__titulo {
+   color: var(--cor-1);
+   font-family: var(--font-padrao);
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 20px;
+}
+
+.talentos__subtitulo {
+    color: var(--cor-3);
+    font-family: var(--font-padrao);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.72px
+}
+
+.talentos__textos {
+    color: var(--cor-2);
+    font-family: var(--font-padrao);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.talentos__img {
+    width: 1216px;
+    height: 400px;
+    flex-shrink: 0;
+   padding-top: 64px;
+}
+
+/*SECTION VAGAS*/
+section.vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0px;
+    gap: 64px;
+}
+    
+section.vagas .talentos {
+        text-align: center;
+}
+
+section.vagas .talentos .texto {
+        padding: 0px 64px;
+        gap: 64px;
+}
+
+section.vagas .talentos .texto span {
+        font-family: var(--font-padrao);
+        line-height: 20px;
+        font-size: 14px;
+        color: var(--cor-1);
+        background: rgba(142, 36, 36, 0.05);
+        border-radius: 16px;
+        padding: 4px 12px;
+}
+    
+section.vagas .talentos .texto h1 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+}
+    
+section.vagas .talentos .texto p {
+        font-family: var(--font-padrao);
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--cor-1);
+}
+    
+section.vagas .vagas_abertas {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 32px;
+        gap: 64px;
+}
+    
+section.vagas .vagas_abertas .conteudo {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 32px;
+        gap: 24px;
+}
+    
+section.vagas .vagas_abertas .conteudo span {
+        font-family: var(--font-padrao);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--cor-3);
+}
+    
+    
+section.vagas .vagas_abertas .conteudo .vaga {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 24px 28px;
+        gap: 24px;
+        width: 768px;
+        border: 1px solid var(--cor-5);
+        border-radius: 16px;
+}
+    
+section.vagas .vagas_abertas .conteudo .vaga p {
+        font-family: var(--font-padrao);
+        width: 720px;
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: var(--cor-3);
+}
+    
+section.vagas .vagas_abertas .conteudo .vaga .descricao span { 
+        padding:0px 12px 0px 0px;
+        font-family: var(--font-padrao);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--cor-2);
+}
+
+/* depoimentos */
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:64px;
+    gap:32px;
+}
+
+.depoimentos__container {
+    text-align: center;
+}
+
+.depoimentos__content {
+    font-family: var(--font-padrao);
+    color: var(--cor-1);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 32px 0 16px 0;
+    padding-bottom: 22px;
+}
+
+.depoimentos__texto {
+    font-family: var(--font-padrao);
+    color: var(--cor-3);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    padding-bottom: 32px;
+}
+
+.imagem {
+    padding-bottom: 16px;
+}
+
+.depoimentos__tex {
+    font-family: var(--font-padrao);
+    color: var(--cor-3);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.depoimentos__web {
+    font-family: var(--font-padrao);
+    color: var(--cor-2);
+    font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+}
+
+/* rodape */
+.rodape {
+    padding: 96px 0px;
+    text-align: center;
+}
+
+.rodape__titulo {
+    font-family: var(--font-padrao);
+    color: var(--cor-3);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; 
+    letter-spacing: -0.72px;
+    padding-bottom: 20px;
+}
+
+.rodape__texto {
+    font-family: var(--font-padrao);
+    color: var(--cor-2);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 40px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 32px 0;
+    gap: 16px;
+}
+
+.rodape__formulario {
+    padding: 12px 14px 12px 16px;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid var(--cor-6);
+    height: 48px;
+    width: 360px;
+    outline: none;
+    font-family: var(--font-padrao);
+    color: var(--cor-2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px
+}
+
+.rodape__formulario-buttom {
+    height: 48px;
+    width: 116px;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid var(--cor-1);
+    background: var(--cor-1);
+    font-family: var(--font-padrao);
+    color: var(--cor-branco);
+    font-size: 16px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.rodape__texto-final {
+    font-family: var(--font-padrao);
+    color: var(--cor-2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 1100px) {
+    .barra__logo {
+      gap: 20px;
+    }
+  
+    .ti {
+      margin: 0;
+    }
+  
+   .metricas__container,
+   .metricas__container__nuremo,
+   .metricas__container__texto,
+   .metricas__container__titulo {
+      height: 350px;
+    }
+  
+    .metricas__container__nuremo,
+   .metricas__container__texto,
+   .metricas__container__titulo {
+      gap: 12px;
+    }
+  
+    .metricas__container__nuremo,
+    .metricas__container__texto,
+    .metricas__container__titulo {
+      padding: 0;
+    }
+  
+  .metricas__container__nuremo {
+      margin: 0;
+    }
+  
+  .metricas__container {
+      margin-top: 32px;
+    }
+  
+   .talentos__titulo {
+      height: 33%;
+    }
+  
+    .talentos {
+      height: auto;
+    }
+  
+    .depoimentos__texto {
+      padding: 15px;
+    }
+}
+  
+
